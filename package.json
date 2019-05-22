@@ -21,9 +21,6 @@
     "tools"
   ],
   "dependencies": {
-    "chokidar": "^1.0.1",
-    "minimatch": "~3.0.2",
-    "utile": "~0.2.1"
   },
   "devDependencies": {
     "optimist": "~0.6.1",
