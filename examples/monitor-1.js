@@ -30,6 +30,12 @@ foreverMonitor.on('exit:code', function (code, signal) {
 
 foreverMonitor.start();
 
+// child process still exist while parent process is killed
+// setTimeout(() => {
+//   process.exit(0);
+// }, 5000);
+
+
 // setTimeout(() => {
 //   foreverMonitor.kill(foreverMonitor.child.pid);
 // }, 20 * 1000);
