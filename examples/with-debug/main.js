@@ -23,11 +23,11 @@ var monitor1 = new Monitor(script, {
   }
 });
 monitor1.on('stdout', buf => {
-  console.log(buf.toString());
+  // console.log(`stdout: ${buf.toString()}`);
   dm1(buf.toString());
 });
 monitor1.on('stderr', buf => {
-  console.log(buf.toString());
+  // console.log(`stderr: ${buf.toString()}`);
   dm1(buf.toString());
 });
 monitor1.start();
@@ -39,11 +39,11 @@ var monitor2 = new Monitor(script, {
   },
 });
 monitor2.on('stdout', buf => {
-  console.log(buf.toString());
+  // console.log(buf.toString());
   dm2(buf.toString());
 });
 monitor2.on('stderr', buf => {
-  console.log(buf.toString());
+  // console.log(buf.toString());
   dm2(buf.toString());
 });
 monitor2.start();
